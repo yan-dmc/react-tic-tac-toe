@@ -6,5 +6,5 @@
 - 🚀 **JavaScript**
 - ⚛️ **React**
 
-🔗 [Acesse o site do projeto](https://yan-dmc.github.io/GitFind/)
+🔗 [Acesse o site do projeto](https://yan-dmc.github.io/reac-tic-tac-toe/)
 
