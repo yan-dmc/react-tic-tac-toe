@@ -1,0 +1,15 @@
+.Menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    width: 20rem;
+}
+
+.Red {
+    color: #ff0000;
+}
+
+.Blue {
+    color: #0000ff;
+}

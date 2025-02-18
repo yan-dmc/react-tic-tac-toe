@@ -1,38 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+  background-color: #454655;
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Bg {
+  width: 100%;
+  height: 100%;
+  background: url(./images/bg.png) no-repeat center;
+  background-size: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-3-3 {
+  display: grid;
+  width: 20rem;
+  height: 20rem;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* 3 colunas, cada uma com largura igual */
+  grid-template-rows: repeat(3, 1fr); /* 3 linhas, cada uma com altura igual */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #00000056;
+  background: #00000000;
+  transition: background .10s;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+    background-color: #0000001c;
+    transition: all .25s;
+}
+
+.grid-item:nth-child(1), .grid-item:nth-child(2), .grid-item:nth-child(3) {
+    border-top: none;
+}
+
+.grid-item:nth-child(1), .grid-item:nth-child(4), .grid-item:nth-child(7) {
+    border-left: none;
+}
+
+.grid-item:nth-child(7), .grid-item:nth-child(8), .grid-item:nth-child(9) {
+    border-bottom: none;
+}
+
+.grid-item:nth-child(9), .grid-item:nth-child(6), .grid-item:nth-child(3) {
+    border-right: none;
+}
+
+.crossRed {
+    color: #ff0000;
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.circleBlue {
+    color: #0000ff;
+    font-size: 5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.winner {
+    position: absolute;
+    background-color: #efefef;
+    text-align: center;
+    width: 20rem;
+    padding: .5rem 0rem;
+    font-weight: bold;
 }
