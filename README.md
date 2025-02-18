@@ -6,5 +6,5 @@
 - 🚀 **JavaScript**
 - ⚛️ **React**
 
-🔗 [Acesse o site do projeto](https://yan-dmc.github.io/reac-tic-tac-toe/)
+🔗 [Acesse o site do projeto](https://yan-dmc.github.io/react-tic-tac-toe/)
 
